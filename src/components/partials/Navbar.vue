@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Home, User, Terminal, Lamp, Clipboard, Mail, Moon, Sun } from 'lucide-vue-next'
+import { Home, User, Terminal, Lamp, Mail, Moon, Sun } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import {

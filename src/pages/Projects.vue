@@ -153,7 +153,7 @@ onMounted(async () => {
                             </div>
                             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 z-10">
                                 <Button variant="default">
-                                    <a :href="repo.url">Source Code</a>
+                                    <a :href="repo.html_url">Source Code</a>
                                 </Button>
                             </div>
                         </div>
