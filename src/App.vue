@@ -4,8 +4,8 @@ import About from '@/pages/About.vue';
 import Projects from '@/pages/Projects.vue';
 import Skills from '@/pages/Skills.vue';
 import Contact from '@/pages/Contact.vue';
-
-
+import { Toaster } from '@/components/ui/sonner'
+import 'vue-sonner/style.css'
 </script>
 
 <template>
@@ -17,6 +17,6 @@ import Contact from '@/pages/Contact.vue';
         <Skills />
         <Contact />
     </main>
-
+    <Toaster />
     <Footer />
 </template>
