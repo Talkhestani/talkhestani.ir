@@ -19,7 +19,7 @@
                 </div>
                 <div class="md:col-span-7 space-y-6 fade-in" style="animation-delay: 0.3s;">
                     <p class="dark:text-gray-300  text-base md:text-lg leading-relaxed">
-                        I’m Mohammad Hossein Alidadi Talkhestani, a passionate full stack developer from Bangladesh,
+                        I’m Mohammad Hossein Alidadi Talkhestani, a passionate full stack developer from Iran,
                         focused on building clean, scalable, and user-friendly web applications. Skilled in Python,
                         Django, JavaScript, and Tailwind CSS, I enjoy creating both the backend logic and the frontend
                         experience. I’m always learning—from designing logic circuits to exploring cybersecurity and

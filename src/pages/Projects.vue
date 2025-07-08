@@ -5,6 +5,7 @@ import axios from 'axios'
 import { onMounted, reactive } from 'vue';
 import EXCLUDE_REPO from '@/constants/exclude'
 
+
 interface RepositoryInterface {
     id: number;
     node_id: string;
@@ -159,7 +160,7 @@ onMounted(async () => {
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 font-mono">{{ repo.name.replace('-', '').toUpperCase() }}</h3>
+                        <h3 class="text-xl font-bold mb-2 font-mono"><a :href="repo.html_url">{{ repo.name }}</a></h3>
                         <p v-if="repo.description" class="dark:text-gray-400 mb-4">{{ repo.description }}</p>
                         <div v-if="repo.topics" class="flex flex-wrap gap-2 mb-4">
                             <Badge v-for="topic in repo.topics" variant="outline" class="rounded-xs">{{ topic }}</Badge>

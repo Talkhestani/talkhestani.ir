@@ -85,7 +85,7 @@ onBeforeUnmount(() => {
 
         <TooltipProvider>
             <Tooltip>
-                <TooltipTrigger as-child>
+                <TooltipTrigger as-child class="mb-18">
                     <Button v-if="mode === 'light'" variant="outline" class="mt-auto rounded-xs" @click="mode = 'dark'">
                         <Moon />
                     </Button>
