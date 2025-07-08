@@ -144,7 +144,7 @@ onMounted(async () => {
             <div class="grid md:grid-cols-2 gap-8 mt-12 fade-in">
                 <div v-for="repo in repos"
                     class="dark:bg-black border rounded-xs overflow-hidden hover-card group">
-                    <div class="h-56 md:h-80 lg:h-80 bg-zinc-800 relative overflow-hidden">
+                    <div class="h-fit bg-zinc-800 relative overflow-hidden">
                         <img :src="`https://opengraph.githubassets.com/${repo.id}/talkhestani/${repo.name}`"
                             loading="lazy" :alt="repo.name" class="w-full">
                         <div
@@ -154,13 +154,13 @@ onMounted(async () => {
                             </div>
                             <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 z-10">
                                 <Button variant="default">
-                                    <a :href="repo.html_url">Source Code</a>
+                                    <a :href="repo.html_url" target="_blank" rel="noreferrer">Source Code</a>
                                 </Button>
                             </div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 font-mono"><a :href="repo.html_url">{{ repo.name }}</a></h3>
+                        <h3 class="text-xl font-bold mb-2 font-mono"><a :href="repo.html_url" target="_blank" rel="noreferrer">{{ repo.name }}</a></h3>
                         <p v-if="repo.description" class="dark:text-gray-400 mb-4">{{ repo.description }}</p>
                         <div v-if="repo.topics" class="flex flex-wrap gap-2 mb-4">
                             <Badge v-for="topic in repo.topics" variant="outline" class="rounded-xs">{{ topic }}</Badge>
