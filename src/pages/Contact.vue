@@ -44,7 +44,7 @@ import { Github } from 'lucide-vue-next';
                             </div>
                             <div>
                                 <p class="text-sm text-gray-400">Phone</p>
-                                <a href=""tel:+989334701079" target="_blank"
+                                <a href="tel:+989334701079" target="_blank"
                                     class="hover:text-gray-500 transition-colors">+989334701079</a>
                             </div>
                         </div>
